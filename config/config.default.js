@@ -53,6 +53,9 @@ module.exports = appInfo => {
     mapping: { '.html': 'ejs' }, // 左边写成.html后缀，会自动渲染.html文件
     // 上述的配置，指的是将 view 文件夹下的 .html 后缀的文件，识别为 .ejs。
   };
+  config.jwt = {
+    secret: 'Nick',
+  };
 
 
   return {
